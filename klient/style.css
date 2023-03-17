@@ -52,11 +52,6 @@
     border-radius: 20px;
     cursor: pointer;
 }
-#guz{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #pesel{
     border-radius:20px ;
 }
