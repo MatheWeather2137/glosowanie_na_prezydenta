@@ -50,6 +50,7 @@
     width: 100px;
     height: 60px;
     border-radius: 20px;
+    cursor: pointer;
 }
 #guz{
     display: flex;
