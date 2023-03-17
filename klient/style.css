@@ -1,0 +1,61 @@
+#body{
+    margin: 3;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(204, 204, 248);
+    display: grid;
+    grid-template-areas: 
+    "kan1 kan2 kan3"
+}
+#kan1{
+    grid-area: kan1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightcoral;
+    width: 300px;
+    height: 300px;
+    border: 4px solid black;
+    text-align: center;
+    border-radius: 30px;
+}
+#kan2{
+    grid-area: kan2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    border: 4px solid black;
+    text-align: center;
+    border-radius: 30px;
+}
+#kan3{
+    grid-area: kan3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lime;
+    width: 300px;
+    height: 300px;
+    border: 4px solid black;
+    text-align: center;
+    border-radius:30px ;
+}
+#guzik{
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+}
+#guz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pesel{
+    border-radius:20px ;
+}
