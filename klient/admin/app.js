@@ -48,14 +48,16 @@ async function select(){
     count()
     Charte()
     tabela()
+    lider()
 }
 select()
 //podliczanie głosów
+var a = 0
+var b = 0
+var c = 0
 var glosy = []
 function count(){
-    var a = 0
-    var b = 0
-    var c = 0
+    
     for(var i=0;i<=json.length-1;i++){
         if(json[i].kandydat==1) a++
         if(json[i].kandydat==2) b++
@@ -89,4 +91,17 @@ function tabela(){
         document.getElementById("kan3").appendChild(td)
         }
 }
+}
+function lider(){
+    var lider
+    if(a>b && a>c){
+        lider = "kandydat1"
+    }
+    else if(b>a && b>c){
+        lider = "kandydat2"
+    }
+    else if(c>a && c>b){
+        lider = "kandydat3"
+    }
+    document.getElementById("lider").innerHTML = "lider: " + lider
 }

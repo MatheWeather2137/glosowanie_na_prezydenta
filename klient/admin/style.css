@@ -1,6 +1,6 @@
-#tabela,th,td{
+#tabela, th, td{
     border: 2px solid black;
-
+    background-color: aqua;
     color: black;
 
 }
