@@ -9,7 +9,8 @@ char = new Chart(ctx, {
     labels: ["Kandydat 1","Kandydat 2","Kandydat 3"],
     datasets: [{
       label: 'Votes',
-      data: glosy
+      data: glosy,
+      borderWidth: 0.5
     }]
   },
     options: {
@@ -92,6 +93,7 @@ function tabela(){
         }
 }
 }
+//kto jest liderem
 function lider(){
     var lider
     if(a>b && a>c) lider = "kandydat1"
