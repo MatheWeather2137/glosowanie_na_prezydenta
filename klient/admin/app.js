@@ -1,3 +1,4 @@
+//wykres
 var char
 
 function Charte(){
@@ -49,6 +50,7 @@ async function select(){
     tabela()
 }
 select()
+//podliczanie głosów
 var glosy = []
 function count(){
     var a = 0
@@ -62,6 +64,7 @@ function count(){
     glosy = [a,b,c]
     console.log(glosy)
 }
+//tabela
 function tabela(){
     for(var i=0;i<=json.length-1;i++){
         if(json[i].kandydat == "1"){

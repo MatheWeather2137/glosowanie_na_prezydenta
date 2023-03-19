@@ -1,3 +1,4 @@
+//głosowanie
 function glosuj(){
     var kandydat = document.getElementsByName("wybor")
     var pesel = document.getElementById("pesel").value
