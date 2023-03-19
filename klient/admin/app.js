@@ -6,11 +6,10 @@ function Charte(){
 char = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ["Kandydat 1","Kandydat 2","Kandydat 3"],
+    labels: ["Andrzej Duda","Zbigniew Boniek","Dawid Trynkiewicz"],
     datasets: [{
       label: 'Votes',
       data: glosy,
-      borderWidth: 0.5
     }]
   },
     options: {
@@ -96,13 +95,13 @@ function tabela(){
 //kto jest liderem
 function lider(){
     var lider
-    if(a>b && a>c) lider = "kandydat1"
-    else if(b>a && b>c) lider = "kandydat2"
-    else if(c>a && c>b) lider = "kandydat3"
+    if(a>b && a>c) lider = "Andrzej Duda"
+    else if(b>a && b>c) lider = "Zbigniew Boniek"
+    else if(c>a && c>b) lider = "Dawid Trynkiewicz"
     else if(a==b && b==c) lider = "remis całkowity"
-    else if(a==b && b!=c) lider = "remis kandydata1 i kandydata2" 
-    else if(a==c && a!=b) lider = "remis kandydata1 i kandydata3"
-    else if(b==c && a!=c) lider = "remis kandydata2 i kandydata3"
+    else if(a==b && b!=c) lider = "remis Andrzeja Dudy i Zbigniewa Bońka" 
+    else if(a==c && a!=b) lider = "remis Andrzeja Dudy i Dawida Trynkiewicza"
+    else if(b==c && a!=c) lider = "remis Zbigniewa Bońka i Dawida Trynkiewicza"
     
     document.getElementById("lider").innerHTML = "lider: " + lider
 }
