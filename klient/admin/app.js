@@ -94,14 +94,13 @@ function tabela(){
 }
 function lider(){
     var lider
-    if(a>b && a>c){
-        lider = "kandydat1"
-    }
-    else if(b>a && b>c){
-        lider = "kandydat2"
-    }
-    else if(c>a && c>b){
-        lider = "kandydat3"
-    }
+    if(a>b && a>c) lider = "kandydat1"
+    else if(b>a && b>c) lider = "kandydat2"
+    else if(c>a && c>b) lider = "kandydat3"
+    else if(a==b && b==c) lider = "remis całkowity"
+    else if(a==b && b!=c) lider = "remis kandydata1 i kandydata2" 
+    else if(a==c && a!=b) lider = "remis kandydata1 i kandydata3"
+    else if(b==c && a!=c) lider = "remis kandydata2 i kandydata3"
+    
     document.getElementById("lider").innerHTML = "lider: " + lider
 }
