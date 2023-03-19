@@ -1,9 +1,10 @@
-#tabela{
+#tabela,th,td{
     border: 2px solid black;
+
     color: black;
+
 }
 td{
     display: block;
     gap: 1px;
 }
-
